@@ -14,8 +14,83 @@ header{
     background-color: blue;
 }
 
+footer{
+    width: 100%;
+    height: 120px;
+    background-color: lawngreen;
+    float: left;
+}
+
 #container{
+    margin: 0 auto;
     width: 80%;
     background-color: red;
-    height: 1000px; margin: 0 auto;
+}
+
+#soccer{
+    width: 50%;
+    height: 400px;
+    background-color: green;
+    float: left;
+}
+
+#volleyball{
+    width: 50%;
+    height: 400px;
+    background-color: purple;
+    float: left;
+}
+
+#basquete{
+    width: 25%;
+    height: 250px;
+    float: left;
+    background-color: gray
+}
+
+#atletismo{
+    width: 25%;
+    height: 250px;
+    float: left;
+    background-color: orange
+}
+
+#natacao{
+    width: 25%;
+    height: 250px;
+    float: left;
+    background-color: yellow
+}
+
+#golfe{
+    width: 25%;
+    height: 250px;
+    float: left;
+    background-color: salmon
+}
+
+/* Abaixo CSS responsivo Tablet */
+@media only screen and (max-width: 960px) {
+    #container{
+        width: 100%;
+    }
+
+    #basquete, #golfe, #natacao, #atletismo{
+        width: 50%;
+    }
+
+    #soccer, #volleyball{
+        width: 100%;
+    }
+}
+
+/* Abaixo CSS responsivo Celular */
+@media only screen and (max-width: 650px) {
+    #container{
+        width: 100%;
+    }
+
+    #basquete, #golfe, #natacao, #atletismo{
+        width: 100%;
+    }
 }
